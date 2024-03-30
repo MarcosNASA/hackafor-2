@@ -16,17 +16,17 @@ export const Ticket: FC<TicketProps> = ({
   avatar = 'https://www.figma.com/file/oB8OIzcBcSUIBXDmmp46mb/image/553aae256d49bfd7691b401b30ec005149d24fd6'
 }) => {
   return (
-    <section>
+    <section className="flex flex-col gap-15">
       <h3 className="text-[30px] text-center">
         Descarga tu ticket y compártelo en redes sociales
       </h3>
-      <div className="w-full mx-auto mt-15">
+      <div className="w-full">
         <Atropos
           shadowScale={1.1}
-          className="w-[720px] bg-transparent h-[310px]  rounded-2xl shadow-[0_0px_90px_-10px_#c138b830] hover:shadow-none"
+          className="w-[720px] bg-transparent h-[310px] shadow-[0_0px_90px_-10px_#c138b830] hover:shadow-none [&_.atropos-inner]:rounded-2xl [&_.atropos-inner]:bg-cBlack [&_.atropos-shadow]:bg-[#c138b830]"
         >
-          <div className="ticket-bg flex h-full rounded-2xl border-2 border-[#171717]">
-            <div className="flex flex-col justify-between p-[30px] pb-[17px] w-full rounded-2xl bg-cBlack">
+          <div className="ticket-bg h-full flex">
+            <div className="w-full p-[30px] pb-[18px] flex flex-col justify-between bg-cBlack rounded-2xl border-2 border-[#171717]">
               <div className="flex gap-5">
                 <img
                   className="w-27 aspect-square rounded-full p-[0.1rem] bg-gradient-to-rb from-[#FC1C37] to-[#AD40E1]"
@@ -69,7 +69,7 @@ export const Ticket: FC<TicketProps> = ({
               </div>
             </div>
 
-            <div className="w-80 h-full flex items-center justify-center bg-gradient-to-rb from-[#FC1C37] to-[#AD40E1] rounded-2xl rounded-lt-0 rounded-lb-0">
+            <div className="w-80 h-full flex items-center justify-center bg-gradient-to-rb from-[#FC1C37] to-[#AD40E1] rounded-2xl">
               <img
                 data-atropos-offset="5"
                 className="w-full p-7 invert-100"
